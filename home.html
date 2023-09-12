@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>  
+    <div class="bem-vindo">
+        <h4 id="mensagemDeBoasVindas"> </h4>
+        <p id="data"></p>  
+    </div>
+    <header>
+
+        <nav>
+
+            <ul>
+                
+                <li><a href="home.html">Home </a></li>
+                <li><a href="cadastro-cliente.html">Cadastro de Clientes </a> </li> 
+                <li><a href="lista-produtos.html">Lista de Produtos</a> </li> 
+                <li><a href="download.html">Download</a></li> 
+                <li><a href="imagens.html">Imagens</a></li>
+                <li class="logout"><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main >
+        <section class="page">
+
+           
+            <p>
+                Bem vindo ao minisistema <a href="#mensagem">BartComp</a>, uma maneira de falicilitar o seu atendimento, gerenciar estoque e prestação de serviço de montagem e manutenção de computadores.
+            </p>
+            <span>
+                Em caso de duvida entre em contato.
+            </span>
+            <form name="meu_form">
+
+                <h1>Fale conosco</h1>
+              
+                <label for="nome">Nome</label>
+                <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" /><br>
+                <br>
+                <label for="fone">Fone</label>
+                <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+                <br>
+                <br>
+                <textarea placeholder="Deixe sua opnião"></textarea>
+                <br>
+                <input type="submit" class="btn" onclick="Enviar();" value="Enviar" />
+              </form>
+            
+        </section>
+        <br>
+        <aside>
+                <table border="1" width="200px">
+                    <tr >
+                        <th colspan="2">Barbosa Tech</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <figure>
+                                <img src="https://www.acif.org.br/wp-content/uploads/2022/03/jovem-empreendedor-scaled.jpg" alt="empreendedor" width="150px" />
+                                <figcaption>Leonardo CEO</figcaption>
+                              </figure>
+                         
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Serviço</td><td>Montagem e Manutenção</td>
+                        </tr>
+                    <tr>
+                        <td colspan="2">Outros Serviços</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> Vendas, consultoria e Aulas de Informática</td>
+                    </tr>
+                </table>
+        </aside>
+    </main>
+    <footer>
+        <span>Todos os direitos reservados</span>
+        <p><a href="mailto:meajudabarto@gmail.com">meajudabarto@gmail.com</a></p>
+        <a name="mensagem">Desenvolvido por Bartolomeu</a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
